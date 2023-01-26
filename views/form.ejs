@@ -1,0 +1,41 @@
+<%- include("partials/header") %>
+
+    <div class="jumbotron centered">
+        <h1 class="text-center my-3 !important"> Add the Data </h1>
+    </div>
+
+    <form action="/form" method="post">
+        <div class="border border-5 shadow bg-white rounded" style="margin: 10% 25%; padding: 5% 5%">
+            <div class="form-group">
+                <label for="name">Document Name(s)</label>
+                <input type="name" class="form-control" id="name" name="name" required>
+            </div>
+      
+              <div class="row my-4">
+                  <div class="form-group col">
+                      <label for="companyName">Company Name</label>
+                      <input type="text" class="form-control" id="companyName" name="companyName" required>
+                  </div>
+          
+                  <div class="form-group col">
+                    <label for="repName">Representative Name</label>
+                    <input type="text" class="form-control" id="repName" name="repName" required>
+                  </div>
+              </div>
+      
+              <div class="form-group my-4" >
+                  <label for="file">Choose the Document(s): </label>
+                  <br>
+                  <input type="file" class="" id="file" name="file" required multiple>
+              </div>
+              
+              <div class="form-group my-4">
+                <label for="description">Document Description</label>
+                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+              </div>
+      
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </div>  
+      </form>
+    
+<%- include("partials/footer") %>
