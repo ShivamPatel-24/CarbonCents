@@ -1,12 +1,492 @@
 <%- include("partials/header") %>
 
-<div class="centered">
-    <div>
-        <img src="https://www.carboncents.com/logo-1.png" width="350" height="250"/>
+<body>
+    <div class="bg-image" id="home" style="background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1774&q=80'); 
+            background-position: center;
+            height: 95vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        "
+    >
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand mx-2" href=""><img  src="https://www.carboncents.com/logo-1.png" width="140" height="100"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-center"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mx-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#intro">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Sign in</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    <div>
-        <button type="submit" class="btn btn-primary bg-white"><a href="/form">Add Document</a></button>
-    </div>
-</div>
+    
+    <section id="intro">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>What we do</h2>
+            </div>
+            <p>
+                Using state-of-the-art solutions, CarbonCents works with you to provide an insight into your operation, focusing on manufacturing, healthcare, education, and municipalities. Our solutions collect, measure, and present data efficiently enabling quality decisions to reduce costs and emissions while creating a healthy working environment and a more sustainable future.
+            </p>
+        </div>       
+    </section>
 
-<%- include("partials/footer") %>
+    <section id="services">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Services</h2>
+        </div>
+            <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <div class="icon"><i class="bi bi-briefcase"></i></div>
+                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="box">
+                <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="box">
+                <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="box">
+                <div class="icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="title"><a href="">Magni Dolores</a></h4>
+                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+
+      <section id="clients">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Clients</h2>
+            <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          </div>
+  
+          <div class="">
+            <div class="row">
+              <div class="col-lg-4"><img src="/images/clients/client-1.png" class="img-fluid" alt=""></div>
+              <div class="col-lg-4"><img src="/images/clients/client-2.png" class="img-fluid" alt=""></div>
+              <div class="col-lg-4"><img src="/images/clients/client-3.png" class="img-fluid" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"><img src="/images/clients/client-4.png" class="img-fluid" alt=""></div>
+                <div class="col-lg-4"><img src="/images/clients/client-5.png" class="img-fluid" alt=""></div>
+                <div class="col-lg-4"><img src="/images/clients/client-6.png" class="img-fluid" alt=""></div>  
+            </div>
+            <div class="row">
+              <div class="col-lg-4"><img src="/images/clients/client-7.png" class="img-fluid" alt=""></div>
+              <div class="col-lg-4"><img src="/images/clients/client-8.png" class="img-fluid" alt=""></div>
+              <div class="col-lg-4"><img src="/images/clients/client-3.png" class="img-fluid" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section>
+
+    <!-- Carousel wrapper -->
+    <section id="Testimonals">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Testimonals</h2>
+                <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+            </div>
+            <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center mt-5" data-mdb-ride="carousel">
+                <!-- Controls -->
+                <div class="d-flex justify-content-center mb-4">
+                <button class="carousel-control-prev position-relative" type="button"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next position-relative" type="button"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+                <!-- Inner -->
+                <div class="carousel-inner py-4">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">Anna Deynah</h5>
+                        <p>UX Designer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                            officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                        </ul>
+                        </div>
+            
+                        <div class="col-lg-4 d-none d-lg-block">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">John Doe</h5>
+                        <p>Web Developer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam, nisi ut aliquid commodi.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li>
+                            <i class="fas fa-star-half-alt fa-sm"></i>
+                            </li>
+                        </ul>
+                        </div>
+            
+                        <div class="col-lg-4 d-none d-lg-block">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">Maria Kate</h5>
+                        <p>Photographer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium voluptatum deleniti atque corrupti.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">John Doe</h5>
+                        <p>UX Designer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                            officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                        </ul>
+                        </div>
+            
+                        <div class="col-lg-4 d-none d-lg-block">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">Alex Rey</h5>
+                        <p>Web Developer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam, nisi ut aliquid commodi.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li>
+                            <i class="fas fa-star-half-alt fa-sm"></i>
+                            </li>
+                        </ul>
+                        </div>
+            
+                        <div class="col-lg-4 d-none d-lg-block">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">Maria Kate</h5>
+                        <p>Photographer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium voluptatum deleniti atque corrupti.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">Anna Deynah</h5>
+                        <p>UX Designer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                            officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                        </ul>
+                        </div>
+            
+                        <div class="col-lg-4 d-none d-lg-block">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">John Doe</h5>
+                        <p>Web Developer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam, nisi ut aliquid commodi.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li>
+                            <i class="fas fa-star-half-alt fa-sm"></i>
+                            </li>
+                        </ul>
+                        </div>
+            
+                        <div class="col-lg-4 d-none d-lg-block">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <h5 class="mb-3">Maria Kate</h5>
+                        <p>Photographer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium voluptatum deleniti atque corrupti.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Inner -->
+            </div>
+            <!-- Carousel wrapper -->
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          </div>
+  
+          <div class="row contact-info">
+  
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <address>A108 Adam Street, NY 535022, USA</address>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="contact-phone">
+                <i class="bi bi-phone"></i>
+                <h3>Phone Number</h3>
+                <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="contact-email">
+                <i class="bi bi-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:info@example.com">info@example.com</a></p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="container mb-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+  
+        <div class="container">
+          <div class="form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+  
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+  
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+
+        
+    <div class="d-flex flex-column h-100">
+
+        <!-- FOR DEMO PURPOSE -->
+        <!-- <section class="hero text-white py-5 flex-grow-1">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="display-4">Bootstrap footer bottom</h1>
+                        <p class="fst-italic text-muted">Using Bootstrap 5 flexbox utilities, create a footer that always sticks to the bottom of your viewport. Snippet by <a class="text-primary" href="https://bootstrapious.com/" target="_blank">Bootstrapious</a></p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- FOOTER -->
+        <footer class="w-100 py-4 flex-shrink-0 footer">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="h1 text-white">FB.</h5>
+                        <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">CarbonCents.com</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">Quick links</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Get started</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">Quick links</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Get started</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-3">Newsletter</h5>
+                        <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <form action="#">
+                            <div class="input-group mb-3">
+                                <input class="form-control newsletter" type="text" placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
+                                <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/vendor/aos/aos.js"></script>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

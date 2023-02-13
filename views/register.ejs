@@ -1,6 +1,13 @@
 <%- include('partials/header') %>
 
-<div>
+<div class="bg-image" id="home" style="background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1774&q=80'); 
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        "
+>
   <div align="Center">
     <img src="https://www.carboncents.com/logo-1.png" width="350" height="250"/>
   </div>
@@ -9,11 +16,11 @@
     <div class="border border-5 shadow bg-white rounded" style="margin: 3% 32% 5% 32%; padding: 5% 5%">
       <div class="form-group ">
         <label for="email">Email</label>
-        <input type="email" class="form-control" name="userName" required placeholder="enter your email address">
+        <input type="email" class="form-control" name="email" required placeholder="enter your email address">
       </div>
       <div class="form-group my-3">
         <label for="companyName">Company</label>
-        <input type="companyName" class="form-control" name="companyName" required placeholder="enter your company name">
+        <input type="text" class="form-control" name="companyName" required placeholder="enter your company name">
       </div>
       <div class="form-group my-3">
         <label for="name">Name</label>
@@ -21,7 +28,8 @@
       </div>
       <div class="form-group my-3">
         <label for="password">Password</label>
-        <input type="password" class="form-control" name="password" required placeholder="enter password">
+        <input type="password" class="form-control"   minlength="4"
+                maxlength="16" name="password" required placeholder="enter password">
       </div>
       <div class="form-group mt-5">
         <button type="submit" class="form-control btn btn-dark">Register</button>

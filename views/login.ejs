@@ -1,16 +1,24 @@
 <%- include('partials/header') %>
 
 
-<div>
+<div class="bg-image" id="home" style="background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1774&q=80'); 
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        "
+    >
   <div align="Center">
     <img src="https://www.carboncents.com/logo-1.png" width="350" height="250"/>
   </div>
   
-  <form action="/login" method="post">
-    <div class="border border-5 shadow bg-white rounded" style="margin: 3% 32% 5% 32%; padding: 5% 5%">
+  
+  <div class="border border-5 shadow bg-white rounded" style="margin: 3% 32% 5% 32%; padding: 5% 5%">
+    <form action="/login" method="POST">
       <div class="form-group my-3">
         <label for="email">Email</label>
-        <input type="email" class="form-control" name="userName" required placeholder="enter your email address">
+        <input type="email" class="form-control" name="email" required placeholder="enter your email address">
       </div>
       <div class="form-group my-4">
         <label for="password">Password</label>
@@ -19,8 +27,17 @@
       <div class="form-group mt-5">
         <button type="submit" class="form-control btn btn-dark">Login</button>
       </div>
-    </div>  
-  </form>
+    
+    </form>
+    <div class="mt-3">
+      <p class>Don't have an account?
+        <!-- <button class="btn btn-light"> -->
+          <a class="text-primary" href='/register'>Sign up for an account</a>
+        <!-- </button> -->
+      </p>
+    </div>
+
+  </div> 
+  <%- include('partials/footer') %>
 </div>
 
-<%- include('partials/footer') %>

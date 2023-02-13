@@ -1,6 +1,8 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const db = require("./database");
 
 const app = express();
 app.set("view engine", "ejs");
@@ -24,14 +26,35 @@ app.get("/register", (req, res) => {
 });
 
 app.post("/register", (req, res) => {
+    const { email, companyName, name, password } = req.body;
     console.log(req.body);
+    try {
+        if (email && password && companyName && name) {
+            sql = `Insert INTO USERS (Email, Name, CompanyName, Password) 
+                VALUES('${email}', '${name}', '${companyName}', '${password}')`;
+
+            db.query(sql, (err, result) => {
+                if (err) throw err;
+                console.log(result);
+            });
+            res.status(201).send({ msg: "Register for user" });
+        }
+    } catch (err) {
+        console.log(err);
+    }
 });
 
 app.get("/login", (req, res) => {
     res.render("login");
 });
 
-app.post("/login", (req, res) => {
+app.post("/login", (req, res) => {});
+
+app.get("/table", (req, res) => {
+    res.render("table");
+});
+
+app.post("/table", (req, res) => {
     console.log(req.body);
 });
 
