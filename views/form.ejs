@@ -7,8 +7,8 @@
     <form action="/form" method="post">
         <div class="border border-5 shadow bg-white rounded" style="margin: 10% 25%; padding: 5% 5%">
             <div class="form-group">
-                <label for="name">Document Name(s)</label>
-                <input type="name" class="form-control" id="name" name="name" required>
+                <label for="DocName">Document Name(s)</label>
+                <input type="text" class="form-control" id="DocName" name="DocName" required>
             </div>
       
               <div class="row my-4">
@@ -33,6 +33,8 @@
                 <label for="description">Document Description</label>
                 <textarea class="form-control" id="description" name="description" rows="3"></textarea>
               </div>
+
+              <div id="drop-zone">Drop file here</div>
       
               <button type="submit" class="btn btn-primary">Submit</button>
         </div>  
