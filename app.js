@@ -9,8 +9,8 @@ methodOverride = require("method-override");
 session = require("express-session");
 const db = require("./database");
 
-var MICROSOFT_GRAPH_CLIENT_ID = "4be4d353-ab63-446d-af53-90ec0f3f6865";
-var MICROSOFT_GRAPH_CLIENT_SECRET = "uDm8Q~9BMHr_hmCS60ujcuRA5-RSzeHnddlHXbsC";
+var MICROSOFT_GRAPH_CLIENT_ID = process.env.CLIENT_ID;
+var MICROSOFT_GRAPH_CLIENT_SECRET = process.env.CLIENT_SECRET;
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
@@ -19,11 +19,11 @@ var MICROSOFT_GRAPH_CLIENT_SECRET = "uDm8Q~9BMHr_hmCS60ujcuRA5-RSzeHnddlHXbsC";
 //   the user by ID when deserializing. However, since this example does not
 //   have a database of user records, the complete Microsoft graph profile is
 //   serialized and deserialized.
-passport.serializeUser(function (user, done) {
+passport.serializeUser((user, done) => {
     done(null, user);
 });
 
-passport.deserializeUser(function (obj, done) {
+passport.deserializeUser((obj, done) => {
     done(null, obj);
 });
 
@@ -37,7 +37,7 @@ passport.use(
         },
         function (accessToken, refreshToken, profile, done) {
             // asynchronous verification, for effect...
-            process.nextTick(function () {
+            process.nextTick(() => {
                 // To keep the example simple, the user's Microsoft Graph profile is returned to
                 // represent the logged-in user. In a typical application, you would want
                 // to associate the Microsoft account with a user record in your database,
@@ -154,7 +154,7 @@ app.get(
         // prompt: 'select_account'
     }),
     // eslint-disable-next-line no-unused-vars
-    function (req, res) {
+    (req, res) => {
         // The request will be redirected to Microsoft for authentication, so this
         // function will not be called.
     }
@@ -168,19 +168,23 @@ app.get(
 app.get(
     "/auth/microsoft/callback",
     passport.authenticate("microsoft", { failureRedirect: "/login" }),
-    function (req, res) {
+    (req, res) => {
         res.redirect("/account");
     }
 );
 
-app.get("/logout", function (req, res) {
-    req.logout();
-    res.redirect("/");
+app.get("/logout", (req, res, next) => {
+    req.logout((err) => {
+        if (err) {
+            return next(err);
+        }
+        res.redirect("/");
+    });
 });
 
 let port = process.env.PORT || 3000;
 
-app.listen(port, function () {
+app.listen(port, () => {
     console.log("Server started on port successfully");
 });
 
