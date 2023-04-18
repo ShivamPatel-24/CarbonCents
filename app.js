@@ -95,8 +95,10 @@ app.post("/form", (req, res) => {
     }
 });
 
+
+
 app.get("/register", (req, res) => {
-    res.render("register");
+    res.redirect("register");
 });
 
 app.post("/register", (req, res) => {
@@ -178,7 +180,7 @@ app.get("/logout", (req, res, next) => {
         if (err) {
             return next(err);
         }
-        res.redirect("/");
+        res.redirect("/login");
     });
 });
 
